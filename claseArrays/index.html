@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frutas = [
+        "Manzana", 
+        "Platano", 
+        "Cereza", 
+        "Fresa"
+        ];
+
+        var masFrutas = frutas.push("Uvas"); //para agregar mas elemento a un array
+        var ultimo = frutas.pop("Uvas") //es para eliminar el ultimo metodo que existe en el array
+        var nuevaLongitud = frutas.unshift("Uvas"); //para agregar un nuevo elemento al inicio de nuestro array.
+        var borrarFruta = frutas.shift("Uvas"); // para eliminar el primer elemento de nuestro array.
+        var posicion = frutas.indexOf("Cereza"); //para mutar un array ,saber la posicion de un elemento.
+
+        console.log(frutas);  
+        console.log(frutas.length); //para saber la longitud de un array
+        console.log(frutas[2]); // para acceder a un elemento especifico de un array
+
+    </script>
+</body>
+</html>

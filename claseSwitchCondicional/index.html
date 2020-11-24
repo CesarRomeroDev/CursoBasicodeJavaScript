@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function jugar(player,cpu){
+            switch(player){
+                case "piedra":
+            switch(cpu){
+                case "tigeras":
+                    console.log("player Ganador!!");
+                    break;
+                case "papel":
+                    console.log("cpu Ganador!!");
+                    break;
+                default:
+                    console.log("esto es un empate");
+            }
+                    break;
+                case "papel":
+            switch(cpu){
+                case "piedra":
+                    console.log("player es ganador!!");
+                    break;
+                case "tigeras":
+                    console.log("cpu es ganador");
+                    break;
+                default:
+                    console.log("esto es un empate");
+            }
+                    break
+                case "tigeras":
+            switch(cpu){
+                case "papel":
+                    console.log("player es gandor");
+                    break;
+                case "piedra":
+                    console.log("cpu es ganador");
+                    break;
+                default: 
+                    console.log("esto es un empate");
+            }
+            }
+        }
+        jugar("papel", "piedra");
+    </script>
+</body>
+</html>
