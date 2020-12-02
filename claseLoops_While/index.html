@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var estudiantes = ["Sergio", "Rosa", "Daniel", "Maria"];
+        function saludarEstudiante(estudiante){
+            console.log(`Hola, ${estudiante}`);
+        }
+        while(estudiantes.length > 0){
+            console.log(estudiantes);
+            var estudiante = estudiantes.shift();
+            saludarEstudiante(estudiante);
+        }
+    </script>
+</body>
+</html>

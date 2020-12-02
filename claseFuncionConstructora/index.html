@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var autos = [
+        ["tesla","modelo x",1920],["toyota","modelo x",2020],["nissan","modelo 5",1850],["tesla","modelo y",1890]
+        
+        ];
+        
+        function auto(marca, modelo, anno){
+            this.marca = marca;
+            this.modelo = marca;
+            this.anno = anno;
+        }
+        for(var i = 0; i < autos.length; i++){
+        var autoNuevo = new auto(autos);
+        console.log(`carro: ${autos[i]}`); 
+        }
+        
+    </script>
+</body>
+</html>
