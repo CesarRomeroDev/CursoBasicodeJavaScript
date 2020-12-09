@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var articulos = [
+            {nombre: "bicicleta", costo: 3000},
+            {nombre: "television", costo: 2500},
+            {nombre: "libro", costo: 300},
+            {nombre: "celular", costo: 10000},
+            {nombre: "laptop", costo: 20000},
+            {nombre: "teclado", costo: 500},
+            {nombre: "audifonos", costo: 1700},
+        ]
+        /*var articulosFiltrados = articulos.filter(function(articulo){
+            return articulo.costo <= 500
+        });
+        console.log(articulosFiltrados);*/
+        var nombreArticulos = articulos.map(function(articulos){
+            return articulos.nombre;
+        });
+        console.log(nombreArticulos);
+    </script>
+</body>
+</html>

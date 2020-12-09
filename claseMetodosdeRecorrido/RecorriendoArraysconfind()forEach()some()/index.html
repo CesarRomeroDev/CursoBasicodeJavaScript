@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var articulos = [
+            {nombre: "bicicleta", costo: 3000},
+            {nombre: "television", costo: 2500},
+            {nombre: "libro", costo: 300},
+            {nombre: "celular", costo: 10000},
+            {nombre: "laptop", costo: 20000},
+            {nombre: "teclado", costo: 500},
+            {nombre: "audifonos", costo: 1700},
+        ];
+
+        var filtrarArticulo = articulos.filter(function(articulo){          //filtra todo el arreglo u objeto especifico.
+            return articulo;
+        });
+        //console.log(filtrarArticulo);
+
+        var mapArticulo = articulos.map(function(articulo){               //recorre el contenido de un array 
+            return articulo.nombre;
+        });
+        //console.log(mapArticulo);
+
+         var encuentraArticulo = articulos.find(function(articulo){         //find retorna solo la primer coincidencia
+            return articulo.nombre === "laptop";
+         });
+         console.log(encuentraArticulo);
+         
+         articulos.forEach(function(articulo){                  //forEach para llamar filtrado o recorrido de un array 
+            //console.log(articulo.nombre);
+         });
+
+         var articulosBaratos = articulos.some(function(articulo){
+             return articulo.costo <= 1000;
+         });
+         //console.log(articulosBaratos);                          //some metodo para regresar true o false
+    </script>
+</body>
+</html>
